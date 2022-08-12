@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.zb.project.mapper.MenuMapper">
+
+    <resultMap id="BaseResultMap" type="cn.zb.project.entity.Menu">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="pid" column="pid" jdbcType="INTEGER"/>
+            <result property="type" column="type" jdbcType="VARCHAR"/>
+            <result property="title" column="title" jdbcType="VARCHAR"/>
+            <result property="permission" column="permission" jdbcType="VARCHAR"/>
+            <result property="icon" column="icon" jdbcType="VARCHAR"/>
+            <result property="href" column="href" jdbcType="VARCHAR"/>
+            <result property="open" column="open" jdbcType="INTEGER"/>
+            <result property="ordernum" column="ordernum" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,pid,type,
+        title,permission,icon,
+        href,open,ordernum
+    </sql>
+</mapper>

@@ -1,0 +1,33 @@
+spring:
+  datasource:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      username: root
+      password: cm20020725
+      url: jdbc:mysql://localhost:3306/project?serverTimezone=UTC&userSSL=false
+
+
+  devtools:
+    restart:
+      enabled: true
+
+
+#shiro配置路径
+shiro:
+  anon-urls:     #放行路径
+    - /toLogin*
+    - /login.html*
+    - /login/login
+    - /login/getCode
+    - /css/**
+    - /echarts/**
+    - /images/**
+    - /layui/**
+    - /layui_ext/**
+    - /js/**
+  login-url: /index.html   #登录路径
+  log-out-url: /login/logout*   #登出路径
+  authc-urls:   #拦截路径
+    - /**
+  web:
+    resources:
+      static-locations: classpath:/templates/**

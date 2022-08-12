@@ -1,0 +1,13 @@
+{
+  "properties": [
+    {
+      "name": "shiro.anon-urls",
+      "type": "java.lang.String",
+      "description": "Description for shiro.anon-urls."
+    },
+    {
+      "name": "shiro.login-url",
+      "type": "java.lang.String",
+      "description": "Description for shiro.login-url."
+    }
+  ] }

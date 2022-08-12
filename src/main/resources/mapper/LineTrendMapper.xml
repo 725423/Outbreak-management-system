@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.zb.project.mapper.LineTrendMapper">
+
+    <resultMap id="BaseResultMap" type="cn.zb.project.entity.LineTrend">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="confirm" column="confirm" jdbcType="INTEGER"/>
+            <result property="isolation" column="isolation" jdbcType="INTEGER"/>
+            <result property="cure" column="cure" jdbcType="INTEGER"/>
+            <result property="dead" column="dead" jdbcType="INTEGER"/>
+            <result property="similar" column="similar" jdbcType="INTEGER"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,confirm,isolation,
+        cure,dead,similar,
+        create_time
+    </sql>
+</mapper>
